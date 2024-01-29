@@ -4,13 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 10</title>
+    
+    <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet" />
     <script type="module" crossorigin src="/goit-advancedjs-hw-03/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-03/assets/vendor-c8cb2b96.js">
+    <link rel="stylesheet" href="/goit-advancedjs-hw-03/assets/vendor-e5212ee8.css">
+    <link rel="stylesheet" href="/goit-advancedjs-hw-03/assets/index-4558465a.css">
   </head>
   <body>
-    <select class="breed-select"></select>
-    <p class="loader">Loading data, please wait...</p>
-    <p class="error">Oops! Something went wrong! Try reloading the page!</p>
-    <div class="cat-info"></div>
+    <div class="container">
+      <div class="container-select hidden">
+        <select class="breed-select hidden"></select>
+      </div>
+      <span class="loader"></span>
+      <div class="cat-info"></div>
+    </div>
 
     
   </body>
