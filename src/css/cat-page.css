@@ -1,0 +1,72 @@
+.hidden {
+    display: none;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.container-select {
+    width: 250px;
+    margin-bottom: 24px;
+}
+
+.cat-info {
+    display: flex;
+    gap: 48px;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 950px;
+}
+
+.picture-thumb {
+    width: 500px;
+    height: 480px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.picture {
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 48px;
+}
+
+.second-title {
+    font-size: 24px;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    border: 8px solid #50ac86;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
